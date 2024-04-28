@@ -13,16 +13,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors())
 
-// Step 2
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://allisonpeng10:1VahcvwwcYyff9kN@cluster0.5epcco7.mongodb.net/', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-});
-
-mongoose.connection.on('connected', () => {
-    console.log('Mongoose is connected!!!!');
-});
-
 // API
 const users = require('/api/users');
 app.use('/api/users', users)
