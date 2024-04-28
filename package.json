@@ -3,23 +3,27 @@
 	"version": "1.0.0",
 	"description": "project repository for HackDavis 2024",
 	"main": "index.js",
-	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node server/index.js",
-		"build": "cd client && npm install && npm run build"
+	  "test": "echo \"Error: no test specified\" && exit 1",
+	  "start": "node server/index.js",
+	  "build": "cd client && npm install && npm run build"
 	},
 	"engines": {
-		"node": "v20.12.2"
+	  "node": "v20.12.2"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
+<<<<<<< HEAD
 		"body-parser": "^1.20.2",
 		"cors": "^2.8.5",
 		"create-react-app": "^1.2.1",
 		"express": "^4.19.2",
 		"mongodb": "^6.5.0"
+=======
+	  "create-react-app": "^1.2.1",
+	  "express": "^4.19.2"
+>>>>>>> parent of bbde6b6 (testing package installation)
 	}
-}
+  }
