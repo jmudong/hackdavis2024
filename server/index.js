@@ -25,7 +25,7 @@ const apartmentSchema = new mongoose.Schema({
 });
 
 // Create Mongoose Model for "apartment"
-const Apartment = mongoose.model('Apartment', apartmentSchema);
+const Apartment = mongoose.model('apartment', apartmentSchema);
 
 // Data parsing
 app.use(express.json());
@@ -35,9 +35,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(morgan('tiny'));
 
 // Route to fetch apartments from MongoDB
-app.get('/api/apartments', async (req, res) => {
+app.get('/api/apartment', async (req, res) => {
     try {
-        const apartments = await Apartment.find();
+        const apartments = await apartment.find();
         res.json(apartments);
     } catch (error) {
         console.error('Error fetching apartments:', error);

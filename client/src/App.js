@@ -7,7 +7,7 @@ function ApartmentList() {
     useEffect(() => {
         async function fetchApartments() {
             try {
-                const response = await axios.get('/api/apartments');
+                const response = await axios.get('/api/apartment');
                 setApartments(response.data);
             } catch (error) {
                 console.error('Error fetching apartments:', error);
