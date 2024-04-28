@@ -1,30 +1,21 @@
 {
-  "name": "hackdavis2024",
-  "version": "1.0.0",
-  "description": "project repository for HackDavis 2024",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "build": "cd client && npm install && npm run build"
-  },
-  "engines": {
-    "node": "v20.12.2"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "create-react-app": "^1.2.1",
-    "express": "^4.19.2",
-<<<<<<< HEAD
-    "mongodb": "^6.5.0",
-    "mongoose": "^8.3.2",
-    "morgan": "^1.10.0"
-=======
-    "mongoose": "^8.3.2",
-    "morgan": "^1.10.0",
-    "routes": "^2.1.0"
->>>>>>> d3e2be3044c428fde7301c8623bf5a42682d1f30
+	"name": "hackdavis2024",
+	"version": "1.0.0",
+	"description": "project repository for HackDavis 2024",
+	"main": "index.js",
+	"scripts": {
+	  "test": "echo \"Error: no test specified\" && exit 1",
+	  "start": "node server/index.js",
+	  "build": "cd client && npm install && npm run build"
+	},
+	"engines": {
+	  "node": "v20.12.2"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+	  "create-react-app": "^1.2.1",
+	  "express": "^4.19.2"
+	}
   }
-}
