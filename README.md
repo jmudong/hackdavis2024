@@ -7,12 +7,12 @@
 
 ### Problem statement:
 ### Among the many needs that students face in Davis, one of the most important is acquiring secure housing at any given time. While the number of housing options are few and far inbetween, students can be easily overwhelmed, and the resulting issues that they can face include:
-###       - They don’t know where to start looking
-###       - Many housing options are not ideal
-###       - Monthly rent may be ambiguous/too expensive
-###       - They’re not sure what’s available or not
+       - They don’t know where to start looking
+       - Many housing options are not ideal
+       - Monthly rent may be ambiguous/too expensive
+       - They’re not sure what’s available or not
 
-### One of the most common resorts to finding housing are specific Facebook groups that offer a place for students/housing-owners can find and advertise available housing options, usually in the form of sublease/lease takeover agreements. Nevertheless, as a consequence of being an online forum, navigation can prove confusing and difficult, especially for new users.
+One of the most common resorts to finding housing are specific Facebook groups that offer a place for students/housing-owners can find and advertise available housing options, usually in the form of sublease/lease takeover agreements. Nevertheless, as a consequence of being an online forum, navigation can prove confusing and difficult, especially for new users.
 
 ## Project Goal: 
 ## HouseCat is a web-based database application that seeks to streamline navigation of housing Facebook groups in the Davis community. Our tool provides ways for users to easily parse through available housing options, so that they can find their ideal living situation in a much more convenient and accessible way.
