@@ -1,24 +1,37 @@
-import React from "react";
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-function App() {
-  const [data, setData] = React.useState(null);
+function ApartmentList() {
+    const [apartments, setApartments] = useState([]);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
-  
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
-    </div>
-  );
+    useEffect(() => {
+        async function fetchApartments() {
+            try {
+                const response = await axios.get('/api/apartment');
+                setApartments(response.data);
+            } catch (error) {
+                console.error('Error fetching apartments:', error);
+            }
+        }
+
+        fetchApartments();
+    }, []);
+
+    return (
+        <div>
+            <h1>Apartment List</h1>
+            <ul>
+                {apartments.map(apartment => (
+                    <li key={apartment._id}>
+                        <h2>{apartment.text}</h2>
+                        <p>Price: ${apartment.price}</p>
+                        <p>Link: <a href={apartment.link}>{apartment.link}</a></p>
+                        <p>Available: {apartment.available ? 'Yes' : 'No'}</p>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
 }
 
-export default App;
+export default ApartmentList;

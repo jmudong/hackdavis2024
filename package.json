@@ -17,8 +17,14 @@
   "dependencies": {
     "create-react-app": "^1.2.1",
     "express": "^4.19.2",
+<<<<<<< HEAD
     "mongodb": "^6.5.0",
     "mongoose": "^8.3.2",
     "morgan": "^1.10.0"
+=======
+    "mongoose": "^8.3.2",
+    "morgan": "^1.10.0",
+    "routes": "^2.1.0"
+>>>>>>> d3e2be3044c428fde7301c8623bf5a42682d1f30
   }
 }
