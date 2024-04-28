@@ -4,9 +4,11 @@
 <img width="179" alt="image" src="https://github.com/jmudong/hackdavis2024/assets/94583245/360cbfc7-d8b2-4226-84a1-f0463209dfce">
 
 
-## Project repository for HackDavis 2024
-### Jasper Dong and Allison Peng
+# Project repository for HackDavis 2024
+## Jasper Dong and Allison Peng
 
+# View the Demo here:
+# https://allison2368.github.io/website_hackdavis/
 ### Problem statement:
 ### Among the many needs that students face in Davis, one of the most important is acquiring secure housing at any given time. While the number of housing options are few and far inbetween, students can be easily overwhelmed, and the resulting issues that they can face include:
 ###       - They don’t know where to start looking
